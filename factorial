@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+	int n,result;
+	printf("enter any number :");
+	scanf("%d",&n);
+	result= fact(n);
+	printf("%d",result);
+}
+   int fact(int a)
+{
+	if (a<1)
+	return 1;
+	else
+   return a*fact(a-1) ;
+  
+}
